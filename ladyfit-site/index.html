@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ladyfit_kg — женский фитнес-клуб в Бишкеке</title>
+<meta name="description" content="Ladyfit_kg — женский фитнес-клуб в Бишкеке: тренажёрный зал, йога, экспресс-похудение. Цены и запись через WhatsApp.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Playfair+Display:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top"><img src="img/logo.png" alt="" width="44" height="44"><span>Ladyfit_kg</span></a>
+  <nav>
+    <a href="#prices">Цены</a>
+    <a href="#book">Запись</a>
+    <a href="#where">Как нас найти</a>
+  </nav>
+  <a class="btn btn-wa" data-wa="Здравствуйте! Хочу записаться в Lady Fit.">WhatsApp</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Фитнес, в&nbsp;котором тебе комфортно</h1>
+      <p>Женский клуб в Бишкеке: тренажёрный зал, йога, экспресс-похудение и занятия для будущих мам. Тренер рядом, мини-группы, женская атмосфера.</p>
+      <div class="actions">
+        <a class="btn" data-wa="Здравствуйте! Хочу записаться на пробное занятие в Lady Fit.">Записаться на пробное</a>
+        <a class="btn btn-ghost" href="#prices">Смотреть цены</a>
+      </div>
+      <p class="trial">Пробное занятие — от 400 сом</p>
+    </div>
+    <div class="hero-logo">
+      <img src="img/logo.png" alt="Логотип Lady Fit" width="420" height="420">
+    </div>
+  </section>
+
+  <section class="prices" id="prices">
+    <h2>Направления и цены</h2>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="panel" id="panel" aria-live="polite"></div>
+    <p class="rules">Абонементы и пробные занятия возврату и обмену не подлежат, независимо от факта посещения. Просим соблюдать правила и нормы клуба.</p>
+  </section>
+
+  <section class="book" id="book">
+    <div>
+      <h2>Записаться через WhatsApp</h2>
+      <p>Заполните форму — откроется WhatsApp с готовым сообщением, останется нажать «Отправить». Администратор ответит и подберёт время.</p>
+    </div>
+    <form id="form">
+      <label>Имя<input name="name" required autocomplete="name"></label>
+      <label>Телефон<input name="phone" type="tel" required autocomplete="tel" placeholder="0500 000 000"></label>
+      <label>Направление<select name="dir" id="dir"></select></label>
+      <label>Пожелания по времени<input name="note" placeholder="Например, вечером по будням"></label>
+      <button class="btn" type="submit">Открыть WhatsApp</button>
+    </form>
+  </section>
+
+  <section class="where" id="where">
+    <h2>Как нас найти</h2>
+    <div class="where-grid">
+      <div class="addr">
+        <p class="big">г. Бишкек,<br>ул. Калык Акиева, 140Б</p>
+        <p>2 этаж. На пересечении улиц Жибек Жолу и Калыка Акиева.</p>
+        <p><a href="tel:+996500242990">0500 242 990</a> — звонки и WhatsApp</p>
+        <div class="actions">
+          <a class="btn" id="gis" href="https://2gis.kg/bishkek/search/%D0%9A%D0%B0%D0%BB%D1%8B%D0%BA%20%D0%90%D0%BA%D0%B8%D0%B5%D0%B2%D0%B0%20140%D0%91" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+          <a class="btn btn-ghost" href="https://instagram.com/ladyfit_kg" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <a class="map" href="https://2gis.kg/bishkek/search/%D0%9A%D0%B0%D0%BB%D1%8B%D0%BA%20%D0%90%D0%BA%D0%B8%D0%B5%D0%B2%D0%B0%20140%D0%91" target="_blank" rel="noopener" aria-label="Показать на карте 2ГИС">
+        <svg viewBox="0 0 400 300" aria-hidden="true">
+          <rect width="400" height="300" fill="#efe7f8"/>
+          <path d="M-10 210 L410 90" stroke="#fff" stroke-width="26"/>
+          <path d="M150 -10 L240 310" stroke="#fff" stroke-width="20"/>
+          <path d="M-10 60 L410 40" stroke="#fff" stroke-width="10"/>
+          <text x="20" y="250" fill="#8a6bb8" font-size="15" font-family="Manrope,sans-serif">ул. Калык Акиева</text>
+          <text x="258" y="60" fill="#8a6bb8" font-size="15" font-family="Manrope,sans-serif">Жибек Жолу</text>
+          <circle cx="197" cy="148" r="34" fill="#7b55b5" opacity=".18"/>
+          <path d="M197 168 C180 140 176 132 176 124 a21 21 0 0 1 42 0 c0 8 -4 16 -21 44z" fill="#7b55b5"/>
+          <circle cx="197" cy="124" r="8" fill="#fff"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img src="img/logo.png" alt="" width="36" height="36">
+  <span>© <span id="y"></span> Ladyfit_kg · Будь сильной. Будь собой.</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
